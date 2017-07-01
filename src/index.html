@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Viet Dat Test Angular 2</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- GLOBAL MANDATORY STYLES -->
+
+  <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- PAGE LEVEL PLUGIN STYLES -->
+  <link href="css/animate.css" rel="stylesheet">
+
+  <!-- THEME STYLES -->
+  <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
+
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+  <script src="systemjs.config.js"></script>
+  <script>
+    System.import('main.js').catch(function(err) {
+      console.error(err);
+    });
+  </script>
+</head>
+
+<body>
+  <profile-template></profile-template>
+</body>
+
+</html>
